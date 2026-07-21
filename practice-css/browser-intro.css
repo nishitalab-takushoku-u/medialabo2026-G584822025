@@ -1,27 +1,43 @@
-p {
+p.info {
+	font-size: small;
+	background-color: #dfdfdf;
+	padding: 5px;
+	
+}
+p{
 	color: navy;
 }
-
-p.info {
-	font-size: 10pt;
+title {
+	color: white;
+	text-shadow: navy;
 }
 
 h1 {
-	background-color: #7f7fcf;
+	color: white;
+	text-shadow: navy 1px 0 10px;
+	padding: 10px;
 }
 
 h2 {
-	border: solid 1px black;
+	color: #3f3faf;
+	background-image: linear-gradient(to right,white, #ffefaf);
 	margin: 5px;
+	font-family:cursive;
 }
 
 div#zentai {
-	display: flex;
-	flex-direction: row;
-	width: 1024px;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 10px;
+	grid-auto-rows: 200px 200px;
 }
 
 div#zentai > div {
-	margin-left: 5px;
+	padding: 5px;
 	background-color: #ffefaf;
+}
+
+div#zentai > div:last-child img {
+	float: right;
+	padding: 10px;
 }

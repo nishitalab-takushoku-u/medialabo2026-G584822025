@@ -1,1 +1,42 @@
-<!-- 課題1-4: プロジェクト課題の検索結果を表示する HTML をここに記述してください．-->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>世界の天気</title>
+    <link rel="stylesheet" href="project.css">
+    <script src="weather.js" defer></script>
+  </head>
+  <body>
+    <label for="santaro">検索</label>
+    <select name="santaro" id="santaro">
+        <option value="">国名を表示してください</option>
+        <option value="360630">Cairo カイロ （エジプト）</option>
+        <option value="524901"> Moscow モスクワ （ロシア）</option>
+        <option value="993800">Johannesburg ヨハネスブルク （南アフリカ）</option>
+        <option value="1816670">Beijing 北京 （中華人民共和国）</option>
+        <option value="1850147">Tokyo 東京 （日本）</option>
+        <option value="1880252">Singapore シンガポール</option>
+        <option value="2147714">Sydney シドニー （オーストラリア</option>
+        <option value="2643743">London ロンドン （イギリス</option>
+        <option value="2968815">Paris パリ （フランス</option>
+        <option value="3451189">Rio de Janeiro リオデジャネイロ （ブラジル</option>
+        <option value="5128581">New York ニューヨーク （アメリカ合衆国）</option>
+        <option value="5368361">Los Angeles ロサンゼルス （アメリカ合衆国</option>
+    </select>
+    <button id="btn">コンソールに表示</button>
+    <h1>世界の天気</h1>
+    <h3>世界の天気（検索結果1件）</h3>
+    <ul>
+    <li>経度: 136.8146</li>
+    <li>緯度: 34.859</li>
+    <li>天気: 晴れ</li>
+    <li>最低気温: 8</li>
+    <li>最高気温: 17</li>
+    <li>湿度: 46</li>
+    <li>風速: 5</li>
+    <li>風向: 45</li>
+    <li>都市名: ヨハネスブルグ</li>
+    </ul>
+    <!-- <img src="ImageNameHere.png" width="300"> -->
+  </body>
+</html>
