@@ -61,9 +61,23 @@ function printDom(data) {
   y.appendChild(z);
 
   let a = document.createElement("img");
-  a.setAttribute("src", "ImageNameHere.png");
-  a.setAttribute("width", "300");
-  x.appendChild(a);
+
+if (data.weather[0].description.includes("晴")) {
+    a.setAttribute("src", "sunny.png");
+} else if (
+    data.weather[0].description.includes("曇") ||
+    data.weather[0].description.includes("雲")
+) {
+    a.setAttribute("src", "cloudy.png");
+} else if (data.weather[0].description.includes("雨")) {
+    a.setAttribute("src", "rain.png");
+} else {
+    a.setAttribute("src", "sunny.png");
+}
+
+a.setAttribute("width", "150");
+x.appendChild(a);
+
 }
 
 // 課題6-1 のイベントハンドラ登録処理
